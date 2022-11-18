@@ -1,25 +1,24 @@
 # #WAP to find a id of a person ?
+from this import d
 
-# from this import d
 
+class Demo:
+     def __init__(self, name):
+         print('Constructor is exectued')
+         self.name = name
+         print('Within constructor method',self.name)
+         print('address of self', id(self))
 
-# class Demo:
-#     def __init__(self, name):
-#         print('Constructor is exectued')
-#         self.name = name
-#         print('Within constructor method',self.name)
-#         print('address of self', id(self))
+     def display(kelf):
+         print('display method is exectued')
+         print('address of kelf', id(d))
+         print('Within display method', kelf.name)
 
-#     def display(kelf):
-#         print('display method is exectued')
-#         print('address of kelf', id(d))
-#         print('Within display method', kelf.name)
-
-# if __name__ == '__main__':
-#     d = Demo(name = "Jowin")
-#     print('Within main function', d.name)
-#     print('address of variable d', id(d))
-#     d.display()
+if __name__ == '__main__':
+     d = Demo(name = "Jowin")
+     print('Within main function', d.name)
+     print('address of variable d', id(d))
+     d.display()
 
 
 #WAP to difference between two bikes ?
@@ -69,4 +68,3 @@ if __name__ == '__main__':
 
     print(b1.__dict__)
     print(b2.__dict__)
-    
